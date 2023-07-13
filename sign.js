@@ -19,7 +19,9 @@ async function SignUp(e) {
     window.location.reload();
     console.log(res);
   } catch (error) {
-    alert("Failed");
-    console.log("error:", error);
+   alert("User alredy exist");
+    
+
+
   }
 }
