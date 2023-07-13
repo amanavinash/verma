@@ -1,6 +1,6 @@
 const User = require("../Model/User");
 const bcrypt = require("bcrypt");
-// const jwt = require("jsonwebtoken");
+const jwt = require("jsonwebtoken");
 exports.signup = async (req, res, next) => {
   try {
     const name = req.body.name;
@@ -17,9 +17,9 @@ exports.signup = async (req, res, next) => {
     console.log(err);
   }
 };
-// const generateAccessToken = (id, name) => {
-//   return jwt.sign({ userId: id, name: name,  },'aman' );
-// };
+const generateAccessToken = (id, name) => {
+  return jwt.sign({ userId: id, name: name,  },'aman' );
+};
 exports.login = async (req, res, next) => {
   try {
     const email = req.body.email;
@@ -36,11 +36,11 @@ exports.login = async (req, res, next) => {
         if (err) {
           return res.json({ success: false, message: "Something Went Wrong" });
         }
-//         if (response) {
-//           Founduser[0].id,
-//             res.status(200).json({ success: true,message: Founduser,token: generateAccessToken( Founduser[0].id, Founduser[0].name, Founduser[0].ispremiumuser),
-//             });
-//         }
+        if (response) {
+          Founduser[0].id,
+            res.status(200).json({ success: true,message: Founduser,token: generateAccessToken( Founduser[0].id, Founduser[0].name, Founduser[0].ispremiumuser),
+            });
+        }
       });
     }
   } catch (err) {
