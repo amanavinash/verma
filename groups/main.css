@@ -1,0 +1,209 @@
+.outer_div{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(43, 255, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top:30px;
+    background-color: antiquewhite;
+}
+.div_chat_main{
+width: 80%;
+    height: 70%; 
+    max-width: 800px;
+    max-height: 800px;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div_chat_main>div{
+    width: 100%;
+     /*height: 300px; */
+    background-color:aqua(109, 109, 231);
+    /* border: 2px solid red; */
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.div_chat_main>:nth-child(1){
+    background-color: rgb(245, 245, 247);
+    /* margin: -3px; */
+    height: 20px;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+box-shadow: none;
+}
+.div_chat_main>:nth-child(1)>:nth-child(1){
+    /* background-color: blue; */
+    width: 20%;
+    }
+.div_chat_main>:nth-child(1)>:nth-child(2){
+/* background-color: blue; */
+width: 80%;
+display: flex;
+justify-content: end;
+}
+
+.display_chat_div{
+    width: 100%;
+    height: 80%;
+    margin: 2px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+}
+.chat_input_div{
+    width: 100%;
+    height: 10%;
+    max-height: 40px;
+    min-height: 30px;
+    max-height: 100px;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+.chat_input1{
+    display: block;
+width: 70%;
+height: 80%;
+max-height: 30px;
+font-size: 25px;
+padding-left: 10px;
+border-radius: 10px;
+border: 2px red;
+}
+.chat_btn1{
+    display: block;
+    width: 10%;
+    height: 80%;
+    min-width: 80px;
+    max-height: 40px;
+    font-size: 25px;
+    padding: 5px;
+    /* padding-left: 10px; */
+    border-radius: 10px;
+    /* border: 2px solid white; */
+    
+}
+
+/* user chats css */
+.main_user{
+ display: flex;
+ justify-content: end;
+
+}
+.main_user>:nth-child(1){
+    /* background-color: aliceblue; */
+    background-color: rgb(24, 241, 241);
+    max-width: 350px;
+    /* margin-right:20px; */
+    margin: 5px 30px;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px 10px 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+
+.main_user>:nth-child(2){
+    /* background-color: aliceblue; */
+    background-color: azure;
+    display: none;
+}
+.other_user{
+    /* background-color: aliceblue; */
+    /* text-align: left; */
+    display: flex;
+
+}
+.main_user>:nth-child(1):hover{
+    /* background-color: white; */
+    
+    background-color: rgba(5, 156, 154, 0.514);
+    transition: 0.2s;
+
+}
+.other_user>:nth-child(1){
+    /* background-color: white; */
+   
+ 
+    background-color: rgb(246, 248, 248);
+    max-width: 350px;
+    /* margin-right:20px; */
+    margin: 5px 5px 10px 30px;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 0px 10px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+.other_user>:nth-child(1):hover{
+transition: 0.2s;
+    background-color: rgb(191, 196, 196);
+}
+.other_user>:nth-child(2){
+  background-color: rgb(185, 246, 246);
+  height: 18px;
+  padding: 5px;
+  font-size: 15px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+ 
+}
+
+/* group list css */
+#group-list-main-div{
+    width: 15%;
+    height: 70%; 
+    max-width: 200px;
+    max-height: 800px;
+    background-color: rgb(109, 172, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    
+}
+#group-list-div{
+width: 100%;
+height: 100%;
+background-color: rgb(46, 45, 109);
+display: flex;
+/* justify-content: center; */
+align-items: center;
+flex-direction: column;
+padding: 5px;
+border-radius: 5px;
+
+}
+#group-list-div>div{
+width: 80%;
+height: 20px;
+min-height: 15px;
+max-height: 25px;
+background-color: rgb(95, 97, 201);
+
+padding: 10px;
+/* border: 2px solid red; */
+margin: 2px;
+border-radius: 2px;
+/* box-sizing: content-box; */
+}
+#group-list-div>div:hover{
+    background-color: rgb(74, 74, 164);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+/* border: 1px solid white;\ */
+
+}
+

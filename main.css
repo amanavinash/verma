@@ -1,0 +1,17 @@
+#display_login_outer{
+    width: 100vw;
+    height: 60vh;
+display: flex;
+justify-content: center;
+align-items: start;
+padding: 50px;
+
+/* background-color: blue; */
+}
+#display_login{
+/* background-color: aqua; */
+
+width: 60%;
+height: 100%;
+display: flex;
+}

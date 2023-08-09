@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="groupCreating_form.css">
+
+  </head>
+  <body id="body">
+
+
+
+
+    <div>
+        <div>ChatApp</div>
+        <!-- <div>
+            <div>Home</div>
+            <div>group</div>
+            <div>About</div>
+        </div> -->
+        <div>
+            <button id="logout_button">logout</button>
+            <br>
+            <hr>
+         <span> </span><span id="display_user_name"> user</span>
+        </div>
+    </div>
+
+
+<!-- create group button -->
+<button id="Create-New-Group">Create New Group</button>
+
+    <div>
+      <div class="outer_div">
+        <div id="group-list-main-div">
+          <div id="group-list-div">
+      
+          </div>
+
+        </div>
+        <div class="div_chat_main" id="div_chat_main">
+          <div id="display_name"></div>
+          <div class="display_chat_div" id="display_chat_div">
+
+<h1>chat </h1>
+
+          </div>
+          <div class="chat_input_div">
+            <input type="text" class="chat_input1" id="chat_input1" />
+            <button class="chat_btn1" id="send_button">send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- 
+    template for group creating form
+<div>
+<div>
+<div>Name</div><div><input type="text" placeholder="Group name"></div>
+<div>select members</div><div></div>
+<div>your selected members</div><div></div>
+ -->
+ <div id="group_creating_btn"> </div>
+
+<!-- <button id="group_creating_btn"> submit</button> -->
+
+</div>
+</div>
+
+
+  </body>
+  <script src="../axios.js"></script>
+  
+  <script src="main.js"></script>
+  <script src="groupCreating_form.js"></script>
+  <script src="group_data_show.js"></script>
+
+  <!-- <script src="main.js"></script> -->
+
+
+</html>
